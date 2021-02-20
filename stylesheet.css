@@ -33,7 +33,6 @@ header{
   color: rgb(255,255,255,.8);
 }
 
-
 .select a:hover{
   color: rgb(255, 255, 255,.5);
 }
@@ -277,8 +276,16 @@ footer .copy{
 }
 
 
-
-
 @media(max-width:600px){
-  background-color:red;
+  .one{
+    background-image: url("img/back-img.png");
+    width:1290px;
+  }
+  .one main-header h1{
+  text-align: center;
+  margin-top:23vh;
+  font-size: 50px;
+  }
 }
+
+
