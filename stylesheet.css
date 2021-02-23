@@ -276,16 +276,56 @@ footer .copy{
 }
 
 
+
 @media(max-width:600px){
   .one{
     background-image: url("img/back-img.png");
-    width:1290px;
+    width:1300px;
   }
   .one main-header h1{
   text-align: center;
   margin-top:23vh;
   font-size: 50px;
   }
+  .two{
+    width:1200px;
+    margin:0 50px;
+    height:500px;
+  }
+
+
+  .three{
+    width:1200px;
+    margin:0 50px;
+    height:1200px;
+  }
+
+  .right-left{
+  display: block;
+  text-align:center;
+  }
+
+  .right-left img{
+    width:1200px;
+  }
+
+  .left{
+    margin-bottom:50px;
+  }
+
+ 
+
+  .four{
+    width:1300px;
+  }
+
+  footer{
+    width:1300px;
+  }
 }
+
+
+
+
 
 
