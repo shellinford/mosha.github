@@ -317,15 +317,56 @@ footer .copy{
 
   .four{
     width:1300px;
+    display:block;
+    height:100vh;
   }
+
+  .img1{
+    width:1200px;
+    margin:0 auto;
+  }
+  .img2{
+    width:1200px;
+    margin:0 auto;
+  }
+  .img3{
+    width:1200px;
+    margin:0 auto;
+  }
+
 
   footer{
     width:1300px;
+    margin-top:1627px;
+    height:1000px;
+  }
+
+  footer .flex{
+    display:inline-block;
+
+  }
+  footer .select ul{
+    display:inline-block;
+    margin-left:505px;
+    font-size:50px;
+  }
+
+  footer .select ul li{
+    padding:30px 0;
+    text-align:center;
+  }
+
+  footer .copy p{
+    font-size:30px;
+  }
+
+  footer h1{
+    width:1200px;
+    text-align:center;
+    font-size:60px;
+    padding:50px 0;
   }
 }
-
-
-
 
 
 
