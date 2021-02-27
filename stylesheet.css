@@ -14,6 +14,79 @@ h1{
 header{
   display: flex;
   justify-content: space-between;
+  height: var(--nav-height);
+  background: var(--nav-background);
+}
+
+.nav-links {
+     display: flex;
+     height: var(--nav-height);
+     align-items: center;
+     margin-left: auto;
+}
+
+.nav-links li {
+     list-style: none;
+     margin: 0 15px;
+     height: var(--nav-height);
+     line-height: var(--nav-height);
+     text-align: center;
+}
+
+.nav-links li a {
+     text-decoration: none;
+     position: relative;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --nav-height: 10vh;
+}
+
+.menu {
+     cursor: pointer;
+     background: var(--nav-background);
+     border: none;
+     outline: none;
+     display: none;
+}
+
+.menu .bar {
+     width: 20px;
+     height: 2px;
+     background: #000;
+     border-radius: 5px;
+     opacity: 1;
+     visibility: visible;
+     transition: 0.5s ease;
+     transform-origin: left;
+}
+.menu .bar1 {
+     margin-bottom: 5px;
+}
+
+.menu .bar3 {
+     margin-top: 5px;
+}
+
+.menu.toggle .bar1 {
+     transform-origin: left;
+     transform: rotate(45deg);
+}
+
+.menu.toggle .bar2 {
+     opacity: 0;
+     visibility: hidden;
+}
+
+.menu.toggle .bar3 {
+     transform-origin: left;
+     transform: rotate(-45deg);
 }
 
 .select ul{
@@ -276,8 +349,34 @@ footer .copy{
 }
 
 
-
 @media(max-width:600px){
+
+  .nav-links {
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          left: 100%;
+          width: 300px;
+          height: 100%;
+          background: var(--nav-background);
+          margin-top: var(--nav-height);
+          transition: 0.5s ease-out;
+        }
+     .nav-links li {
+          height: var(--nav-height);
+          line-height: var(--nav-height);
+          text-align: center;
+          width: 100%;
+          display: block;
+        }
+     .menu {
+          display: block;
+          margin-left: auto;
+     }
+
+     .menu.toggle + .nav-links {
+          transform: translateX(-100%);
+     }
   .one{
     background-image: url("img/back-img.png");
     width:1300px;
@@ -313,7 +412,7 @@ footer .copy{
     margin-bottom:50px;
   }
 
- 
+
 
   .four{
     width:1300px;
@@ -367,6 +466,3 @@ footer .copy{
     padding:50px 0;
   }
 }
-
-
-
